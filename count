@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+import sys 
+
 while True:
 
     userin = input("\n文字列を入力（終了するには 'e' を入力）: ")
