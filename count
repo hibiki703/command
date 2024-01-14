@@ -1,23 +1,20 @@
 #!/usr/bin/python3 
 
-while True:
 
-    userin = input("\n文字列を入力（終了するには 'e' を入力）: ")
+userin = input("\n文字列を入力 :")
+        
 
-    if userin.lower() == 'e':
-            print("")
-            break
+count = len(userin)
+upcount = sum(1 for char in userin if char.isupper())
+lowcount = sum(1 for char in userin if char.islower())
+dicount = sum(1 for char in userin if char.isdigit())
+spcount = userin.count(' ') + userin.count('\u3000')
+kicount = count - upcount - lowcount - dicount - spcount
 
-    count = len(userin)
-    upcount = sum(1 for char in userin if char.isupper())
-    lowcount = sum(1 for char in userin if char.islower())
-    dicount = sum(1 for char in userin if char.isdigit())
-    spcount = userin.count(' ') + userin.count('\u3000')
-    kicount = count - upcount - lowcount - dicount - spcount
-
-    print("入力された文字数:", count)
-    print("大文字の数:", upcount)
-    print("小文字の数:", lowcount)
-    print("数字の数:", dicount)
-    print("空白の数:", spcount)
-    print("その他:", kicount)
+print("")
+print("入力された文字数:", count)
+print("大文字の数      :", upcount)
+print("小文字の数      :", lowcount)
+print("数字の数        :", dicount)
+print("空白の数        :", spcount)
+print("その他          :", kicount)
