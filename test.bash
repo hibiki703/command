@@ -21,7 +21,4 @@ out=$(echo "Hello! 123" | ./count)
 空白の数        : 1
 その他          : 1' ] || ng "$LINENO"
 
-### STRANGE INPUT ###
-
-
 exit $res

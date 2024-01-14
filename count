@@ -1,8 +1,8 @@
 #!/usr/bin/python3 
+# SPDX-FileCopyrightText: 2024 Hibiki Iida
+# SPDX-License-Identifier: BSD-3-Clause
 
-
-userin = input("\n文字列を入力 :")
-        
+userin = input("\n文字列を入力 :")        
 
 count = len(userin)
 upcount = sum(1 for char in userin if char.isupper())
