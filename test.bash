@@ -22,7 +22,7 @@ out="Hello! 123"
 ### STRANGE INPUT ###
 "out=$(echo あ | ./count)
 [ "$?" = 1 ]     || ng {$LINENO}
-[ "${out}" = "" ] || ng {$LINENO}"
+[ "${out}" = "" ] || ng {$LINENO}
 
 [ "$res" = 0 ] && echo OK
-exit $res
+exit $res"
