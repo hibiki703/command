@@ -11,8 +11,8 @@ ng(){
 res=0
 
 ### I/O TEST ###
-A=e
-[ "$A" = e ] || ng "$LINENO"
+out=e
+[ "${out}" = "e" ] || ng "$LINENO"
 
 ### STRANGE INPUT ###
 exit $res
