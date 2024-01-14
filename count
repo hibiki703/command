@@ -1,14 +1,12 @@
-#!/usr/bin/python3
-
-import sys 
+#!/usr/bin/python3 
 
 while True:
 
     userin = input("\n文字列を入力（終了するには 'e' を入力）: ")
 
     if userin.lower() == 'e':
-        print("")
-        break
+            print("")
+            break
 
     count = len(userin)
     upcount = sum(1 for char in userin if char.isupper())
@@ -21,5 +19,5 @@ while True:
     print("大文字の数:", upcount)
     print("小文字の数:", lowcount)
     print("数字の数:", dicount)
-    print("記号の数:", kicount)
     print("空白の数:", spcount)
+    print("その他:", kicount)
