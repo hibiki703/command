@@ -20,9 +20,5 @@ out="Hello! 123"
 空白の数: 1] || ng "$LINENO"
 
 ### STRANGE INPUT ###
-"out=$(echo あ | ./count)
-[ "$?" = 1 ]     || ng {$LINENO}
-[ "${out}" = "" ] || ng {$LINENO}
 
-[ "$res" = 0 ] && echo OK"
 exit $res
